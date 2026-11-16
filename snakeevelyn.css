@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #32104f, #812b91, #d66baf);
+}
+
+header {
+  padding: 20px;
+  background: #260d3b;
+}
+
+h1 {
+  color: #f7b5e8;
+}
+
+nav, button {
+  margin: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  background: #a64caf;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+button:hover {
+  background: #d65ab5;
+}
+
+main {
+  padding: 15px;
+}
+
+section {
+  max-width: 600px;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 15px;
+  background: #401b59;
+}
+
+canvas {
+  width: min(100%, 400px);
+  height: auto;
+  border: 4px solid #e9a7ed;
+  background: #190d27;
+  image-rendering: pixelated;
+}
+
+.controls {
+  margin: 15px;
+}
+
+#foods, #colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.locked {
+  opacity: 0.4;
+}
+
+.color-option {
+  width: 125px;
+  height: 42px;
+  padding: 8px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 9px;
+}
+
+.color-option:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@media (max-width: 450px) {
+  nav button {
+    padding: 8px;
+  }
+
+  section {
+    padding: 12px;
+  }
+}

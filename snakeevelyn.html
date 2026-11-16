@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Gusanito</title>
+  <link rel="stylesheet" href="snakeEvelyn.css">
+</head>
+<body>
+  <header>
+    <h1>🐍 Snake Gusanito</h1>
+    <nav>
+      <button onclick="show('juego')">Jugar</button>
+      <button onclick="show('comida')">Comidas</button>
+      <button onclick="show('colores')">Personalizar</button>
+      <button onclick="show('records')">Récords</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="juego">
+      <h2>¡A jugar!</h2>
+      <p>Puntos: <span id="score">0</span> | Récord: <span id="record">0</span></p>
+      <canvas id="board" width="400" height="400"></canvas>
+      <p id="message">Presiona Jugar para comenzar.</p>
+      <button onclick="startGame()">Jugar</button>
+      <button onclick="pauseGame()">Pausar</button>
+      <button onclick="startGame()">Reiniciar</button>
+
+      <div class="controls">
+        <button onclick="move('up')">⬆️</button>
+        <div>
+          <button onclick="move('left')">⬅️</button>
+          <button onclick="move('down')">⬇️</button>
+          <button onclick="move('right')">➡️</button>
+        </div>
+      </div>
+      <p>Usa las flechas o WASD para mover el gusanito.</p>
+    </section>
+
+    <section id="comida" hidden>
+      <h2>🍎 Colección de comidas</h2>
+      <div id="foods"></div>
+      <p>Las comidas se desbloquean al conseguir puntos.</p>
+    </section>
+
+    <section id="colores" hidden>
+      <h2>🎨 Personaliza tu gusanito</h2>
+      <div id="colors"></div>
+      <p id="unlock"></p>
+    </section>
+
+    <section id="records" hidden>
+      <h2>🏆 Récords</h2>
+      <p>Tu mejor puntuación: <strong id="best">0</strong></p>
+      <p>Puntos acumulados: <strong id="total">0</strong></p>
+    </section>
+  </main>
+
+  <script src="snakeEvelyn.js"></script>
+</body>
+</html>

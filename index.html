@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snake Gusanito</title>
-  <link rel="stylesheet" href="snakeEvelyn.css">
+  <link rel="stylesheet" href="snakeevelyn.css">
 </head>
 <body>
+
   <header>
     <h1>🐍 Snake Gusanito</h1>
     <nav>
@@ -21,8 +22,11 @@
     <section id="juego">
       <h2>¡A jugar!</h2>
       <p>Puntos: <span id="score">0</span> | Récord: <span id="record">0</span></p>
+
       <canvas id="board" width="400" height="400"></canvas>
+
       <p id="message">Presiona Jugar para comenzar.</p>
+
       <button onclick="startGame()">Jugar</button>
       <button onclick="pauseGame()">Pausar</button>
       <button onclick="startGame()">Reiniciar</button>
@@ -35,6 +39,7 @@
           <button onclick="move('right')">➡️</button>
         </div>
       </div>
+
       <p>Usa las flechas o WASD para mover el gusanito.</p>
     </section>
 
@@ -57,6 +62,6 @@
     </section>
   </main>
 
-  <script src="snakeEvelyn.js"></script>
+  <script src="snakeevelyn.js"></script>
 </body>
 </html>
